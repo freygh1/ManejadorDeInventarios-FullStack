@@ -17,7 +17,7 @@ export default function ProductCrud() {
     const response = await fetch(API_URL);
 
     if (!response.ok) {
-      throw new Error("No se pudieron obtener los productos.");
+      throw new Error(" ");
     }
 
     const data = await response.json();
