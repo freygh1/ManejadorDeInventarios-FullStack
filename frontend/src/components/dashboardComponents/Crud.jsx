@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
 
-const API_URL = "http://localhost:5175/api/products";
+const API_URL = import.meta.env.PUBLIC_API_URL;
 
 export default function ProductCrud() {
   const [products, setProducts] = useState([]);
